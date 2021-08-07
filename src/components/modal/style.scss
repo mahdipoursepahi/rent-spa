@@ -1,0 +1,37 @@
+@import "../../assets/styles/mixins";
+@import "../../assets/styles/colors";
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(#000000, 0.7);
+    z-index: 1000;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 70rem;
+    @include content-container;
+
+    form {
+        @include form;
+    }
+
+    #{&}__close-button {
+        padding: 1rem;
+        background-color: $color-gray5;
+        border-radius: 50%;
+        vertical-align: middle;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

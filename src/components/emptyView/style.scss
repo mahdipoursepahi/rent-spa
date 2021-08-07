@@ -1,0 +1,24 @@
+@import "../../assets/styles/mixins";
+@import "../../assets/styles/colors";
+
+.empty-view {
+    @include flex-container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    @include content-container;
+    height: 50rem;
+    font-size: 1.6rem;
+    color: $color-gray2;
+
+    img {
+        width: 20rem;
+    }
+
+    h3 {
+        margin: 1rem 0;
+    }
+}

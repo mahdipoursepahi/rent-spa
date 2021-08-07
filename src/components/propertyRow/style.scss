@@ -1,0 +1,14 @@
+@import "./../../assets/styles/colors";
+
+.property-row {
+    font-size: 1.6rem;
+
+    span:first-of-type {
+        color: $color-gray5;
+    }
+
+    span:last-of-type {
+        color: $color-gray2;
+        font-weight: 500;
+    }
+}

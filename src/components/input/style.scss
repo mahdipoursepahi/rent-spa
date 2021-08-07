@@ -1,0 +1,37 @@
+@import "../../assets/styles/colors";
+
+.form-group {
+    margin-top: 1rem;
+
+    label {
+        display: block;
+        margin-bottom: 0.25rem;
+        font-size: 1.6rem;
+        color: $color-gray2;
+    }
+
+    input {
+        width: 100%;
+        outline: none;
+        background-color: $color-gray4;
+        border: 0.2rem solid $color-gray3;
+        border-radius: 1rem;
+        padding: 1rem;
+        font-size: 1.6rem;
+        color: $color-gray2;
+
+        &::placeholder {
+            color: $color-gray5;
+        }
+    }
+
+    &:last-of-type {
+        margin-bottom: 1rem;
+    }
+
+    #{&}__error-text {
+        margin-top: 0.25rem;
+        font-size: 1.4rem;
+        color: $color-red;
+    }
+}
