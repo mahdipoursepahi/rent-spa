@@ -1,18 +1,15 @@
 @import "./../../assets/styles/mixins";
 @import "./../../assets/styles/colors";
 
-main {
-    margin: 1rem
-}
-
 .details {
-    @include content-container;
-    display: grid;
-    grid-template-columns: repeat (4, 1fr);
-    align-items: center;
-    height: 15rem;
+  @include content-container;
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat (4, 1fr);
+  align-items: center;
+  height: 15rem;
 
-    p:not(p:first-of-type) {
-        margin-top: 1rem;
-    }
+  p:not(p:first-of-type) {
+    margin-top: 1rem;
+  }
 }

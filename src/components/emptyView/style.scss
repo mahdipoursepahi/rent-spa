@@ -2,23 +2,24 @@
 @import "../../assets/styles/colors";
 
 .empty-view {
-    @include flex-container {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        flex-grow: 1;
-    }
+  @include flex-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+  }
 
-    @include content-container;
-    height: 50rem;
-    font-size: 1.6rem;
-    color: $color-gray2;
+  @include content-container;
+  margin: 1rem;
+  height: 50rem;
+  font-size: 1.6rem;
+  color: $color-gray2;
 
-    img {
-        width: 20rem;
-    }
+  img {
+    width: 20rem;
+  }
 
-    h3 {
-        margin: 1rem 0;
-    }
+  h3 {
+    margin: 1rem 0;
+  }
 }

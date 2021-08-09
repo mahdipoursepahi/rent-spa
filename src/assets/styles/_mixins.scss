@@ -1,44 +1,44 @@
 @import "./colors";
 
 @mixin flex-container() {
-    display: flex;
-    @content;
+  display: flex;
+  @content;
 }
 
 @mixin content-container {
-    border: 0.2rem solid $color-gray3;
-    border-radius: 1rem;
-    background-color: $color-white;
-    padding: 1rem 2rem;
+  border: 0.2rem solid $color-gray3;
+  border-radius: 1rem;
+  background-color: $color-white;
+  padding: 1rem 2rem;
 }
 
 @mixin header {
-    @include flex-container {
-        align-items: center;
-    }
+  @include flex-container {
+    align-items: center;
+  }
 
-    height: 8rem;
-    padding: 0 2rem;
-    background-color: $color-gray1;
+  height: 8rem;
+  padding: 0 3rem;
+  background-color: $color-gray1;
 }
 
 @mixin form {
-    h1 {
-        text-align: center;
-        color: $color-gray2;
-    }
+  h1 {
+    text-align: center;
+    color: $color-gray2;
+  }
 
-    button {
-        @include button;
-        padding: 1rem 3rem;
-        border-radius: 1rem;
-        background-color: $color-gold;
-        font-size: 1.6rem;
-    }
+  button {
+    @include button;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    background-color: $color-gold;
+    font-size: 1.6rem;
+  }
 }
 
 @mixin button {
-    border: none;
-    outline: none;
-    cursor: pointer;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }

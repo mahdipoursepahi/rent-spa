@@ -1,0 +1,68 @@
+@import "./assets/styles/mixins";
+@import "./assets/styles/colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+:root {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $color-gray4;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Toastify__toast-body {
+  font-size: 1.6rem;
+}
+
+.login,
+.signup {
+  height: 100vh;
+
+  @include flex-container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form {
+    @include content-container;
+    @include form;
+    width: 60rem;
+  }
+
+  p {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+
+    a {
+      color: $color-blue;
+    }
+  }
+}
+
+.advertisements {
+  min-height: calc(100vh - 8rem);
+  padding: 1rem;
+
+  @include flex-container {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 1rem;
+  }
+}
+
+.leaflet-container {
+  height: 30rem;
+  margin: 1.5rem 0;
+}

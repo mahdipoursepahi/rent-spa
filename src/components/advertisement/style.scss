@@ -2,35 +2,35 @@
 @import "../../assets//styles/colors";
 
 .advertisement {
-    display: grid;
-    grid-template-columns: repeat (4, 1fr);
-    align-items: center;
-    width: 45rem;
-    height: 20rem;
-    @include content-container;
+  display: grid;
+  grid-template-columns: repeat (4, 1fr);
+  align-items: center;
+  width: 45rem;
+  height: 20rem;
+  @include content-container;
 
-    #{&}__delete-btn,
-    #{&}__update-btn,
-    #{&}__details-btn {
-        @include button;
-        border-radius: 1rem;
-        padding: 1rem 3rem;
-        font-size: 1.4rem;
-    }
+  #{&}__delete-btn,
+  #{&}__update-btn,
+  #{&}__details-btn {
+    @include button;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+  }
 
-    #{&}__delete-btn {
-        background-color: $color-red;
-        color: $color-white;
-    }
+  #{&}__delete-btn {
+    background-color: $color-red;
+    color: $color-white;
+  }
 
-    #{&}__update-btn {
-        margin-left: 2rem;
-        background-color: $color-gold;
-    }
+  #{&}__update-btn {
+    margin-left: 2rem;
+    background-color: $color-gold;
+  }
 
-    #{&}__details-btn {
-        width: fit-content;
-        background-color: $color-blue;
-        color: $color-white;
-    }
+  #{&}__details-btn {
+    width: fit-content;
+    background-color: $color-blue;
+    color: $color-white;
+  }
 }
